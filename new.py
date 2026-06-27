@@ -1,37 +1,4 @@
 
-# # ─────────────────────────────────────────────
-# # ACTIVITY LOGGING SYSTEM
-# # ─────────────────────────────────────────────
-# LOG_FILE = "activity_log.json"
-
-
-# def log_activity(action: str, details: str):
-#     entry = {
-#         "timestamp": datetime.datetime.now().isoformat(),
-#         "action": action,
-#         "details": details,
-#     }
-#     logs = []
-#     if os.path.exists(LOG_FILE):
-#         try:
-#             with open(LOG_FILE, "r") as f:
-#                 logs = json.load(f)
-#         except Exception:
-#             logs = []
-#     logs.append(entry)
-#     with open(LOG_FILE, "w") as f:
-#         json.dump(logs, f, indent=2)
-
-
-# def get_logs():
-#     if os.path.exists(LOG_FILE):
-#         try:
-#             with open(LOG_FILE, "r") as f:
-#                 return json.load(f)
-#         except Exception:
-#             return []
-#     return []
-
 
 # # ─────────────────────────────────────────────
 # # AES CIPHER — PASSWORD-BASED ENCRYPTION
