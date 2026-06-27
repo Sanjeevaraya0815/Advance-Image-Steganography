@@ -1,25 +1,3 @@
-# import streamlit as st
-# from PIL import Image, ExifTags
-# import hashlib
-# from Crypto import Random
-# from Crypto.Cipher import AES
-# from base64 import b64encode, b64decode
-# import numpy as np
-# import io
-# import json
-# import os
-# import datetime
-# import math
-# import struct
-# import zlib
-# import random
-# import smtplib
-# from email.mime.multipart import MIMEMultipart
-# from email.mime.base import MIMEBase
-# from email import encoders
-# from reportlab.lib.pagesizes import letter
-# from reportlab.pdfgen import canvas as pdf_canvas
-
 
 # # ─────────────────────────────────────────────
 # # ACTIVITY LOGGING SYSTEM
