@@ -2,54 +2,6 @@
 
 
 
-#     # ═══════════════════════════════════════════
-#     # MODULE 7 — REPORT GENERATION
-#     # ═══════════════════════════════════════════
-#     elif section == "📄 Automated Report Generation":
-#         st.header("Automated Report Generation")
-#         st.info("Generate a PDF report summarising a steganography operation.")
-
-#         with st.form("report_form"):
-#             op_type = st.selectbox("Operation Type", ["Encode", "Decode", "Steganalysis", "Integrity Check"])
-#             filename = st.text_input("Image Filename")
-#             algorithm = st.text_input("Algorithm Used")
-#             notes = st.text_area("Additional Notes")
-#             image_hash = st.text_input("Image SHA-256 Hash (optional)")
-#             submitted = st.form_submit_button("Generate PDF Report 📄")
-
-#         if submitted:
-#             report_data = {
-#                 "Operation Type": op_type,
-#                 "Image Filename": filename,
-#                 "Algorithm": algorithm,
-#                 "Image SHA-256": image_hash or "N/A",
-#                 "Notes": notes,
-#                 "Timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-#             }
-#             pdf_bytes = generate_report(report_data)
-#             log_activity("Report Generated", f"Op: {op_type}, File: {filename}")
-#             st.success("Report generated successfully!")
-#             st.download_button("📥 Download PDF Report", pdf_bytes, "stego_report.pdf", "application/pdf")
-
-#     # ═══════════════════════════════════════════
-#     # MODULE 8 — ACTIVITY LOG
-#     # ═══════════════════════════════════════════
-#     elif section == "📋 Activity Log":
-#         st.header("Activity Logging System")
-#         logs = get_logs()
-#         if logs:
-#             st.success(f"{len(logs)} log entries found.")
-#             col1, col2 = st.columns([3, 1])
-#             with col2:
-#                 if st.button("Clear All Logs"):
-#                     if os.path.exists(LOG_FILE):
-#                         os.remove(LOG_FILE)
-#                     st.rerun()
-#             for entry in reversed(logs):
-#                 with st.expander(f"[{entry['timestamp']}] {entry['action']}"):
-#                     st.write(entry["details"])
-#         else:
-#             st.info("No activity logged yet. Actions performed in other modules will appear here.")
 
 
 # if __name__ == "__main__":
