@@ -1,18 +1,5 @@
 
 
-# # ─────────────────────────────────────────────
-# # HELPER FUNCTIONS
-# # ─────────────────────────────────────────────
-# def to_binary(data):
-#     if isinstance(data, str):
-#         return "".join([format(ord(char), "08b") for char in data])
-#     elif isinstance(data, (bytes, np.ndarray)):
-#         return [format(byte, "08b") for byte in data]
-#     elif isinstance(data, (int, np.uint8)):
-#         return format(data, "08b")
-#     else:
-#         raise TypeError("Unsupported input type")
-
 
 # # ─────────────────────────────────────────────
 # # PAYLOAD CAPACITY ESTIMATOR
