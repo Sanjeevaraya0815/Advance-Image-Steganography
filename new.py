@@ -2,10 +2,6 @@
 
 
 
-
-
-# if __name__ == "__main__":
-#     main()
 import streamlit as st
 from PIL import Image, ExifTags
 import hashlib
