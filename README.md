@@ -745,5 +745,4 @@ This project successfully combines **information hiding**, **cryptography**, **d
 
 ---
 
-*Report prepared by Team ST#IS — Vardhaman College of Engineering, Department of Computer Science and Engineering (AI&ML)*  
-*© 2024 All Rights Reserved*
+
